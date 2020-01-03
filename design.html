@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="intro.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto"><!--ml-auto was added to move the nav list to the left side of the page-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Maxtemp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box leftpart">
+                    <br>
+                    <h2>Summary: Latitude vs. X</h2>
+                    <hr>
+                <br>
+                            <img class="left" src="Latitude_vs_Max_Temp.png" width=340px length=240px>
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                                To
+                                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
+                                on
+                                over 500 cities.</p>
+                                <br>
+
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                                latitude.
+                                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site
+                                provides
+                                the source data and visualizations created as part of the analysis, as well as explanations and
+                                descriptions of any trends and correlations witnessed.</p>
+                                <br>
+                                <br>
+                </div>
+            </div>
+            <div class="col-md-4 rightpart">
+                <br>
+                <h5>Visualizations</h5>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="Maxtemp.html">
+                                <img src="Latitude_vs_Max_Temp.png" style="width:100%">
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-6">
+                            <a href="cloudiness.html">
+                                <img src="Latitude_vs_Cloudiness.png" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="Humidity.html">
+                                <img src="Latitude_vs_Humidity.png" style="width:100%">
+                            </a>
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <a href="windspeed.html">
+                                <img src="Latitude_vs_WindSpeed.png" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">Copyright &copy; Solicia Xu for Rice Bootcamp</div>
+        </footer>
+</body>
+
+</html>

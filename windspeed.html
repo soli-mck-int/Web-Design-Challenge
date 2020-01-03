@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maxtemp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="intro.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!--ml-auto was added to move the nav list to the left side of the page-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Maxtemp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container part1">
+        <div class="row">
+            <div class="col-md-8">
+                <br>
+                <br>
+                <div class="box leftpart">
+
+                    <h2>Wind Speed</h2>
+                    <br>
+                    <br>
+                    <img src="Latitude_vs_WindSpeed.png" height="360px" width="520px">
+                    <br>
+                    <br>
+                    <p>As expected, there is little to no relationship between latitude and wind speed. But we do notice
+                        that many of the cities in the northern hemisphere have strong wind speeds than there are in the
+                        cities in the southern hemisphere.
+                        Wind speed tends to stay between 0 and 12mph whether the cities are located in northern or
+                        southern hemisphere.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-4">
+                <br>
+                <br>
+                <div class="rightpart1">
+                    <h5>Visualizations</h5>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="Maxtemp.html">
+                                    <img src="Latitude_vs_Max_Temp.png" style="width:100%">
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-md-6">
+                                <a href="cloudiness.html">
+                                    <img src="Latitude_vs_Cloudiness.png" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="Humidity.html">
+                                    <img src="Latitude_vs_Humidity.png" style="width:100%">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="windspeed.html">
+                                    <img src="Latitude_vs_WindSpeed.png" style="width:100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+            <footer>
+                <div class="footer">Copyright &copy; Solicia Xu for Rice Bootcamp</div>
+            </footer>
+            </body>
+            
+            </html>

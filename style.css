@@ -1,0 +1,90 @@
+.title{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.navigation .navbar-brand{
+    background-color: rgb(65, 140, 187);
+    color: floralwhite;
+    font-size: 30px;
+    margin-left: 80px;
+    word-spacing: 0.8em;
+    font-weight: bold;
+    padding: 10px;
+}
+h2{
+    color:  darkblue;
+    font-weight: bold;
+}
+h5{
+    color: darkblue;
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    color: mediumturquoise;
+}
+.comparison{
+    margin-left: 80px;
+}
+.subtitle{
+    margin-left: 80px;
+}
+.table{
+    width: auto;
+    margin-left: 60px;
+}.datitle{
+    margin-left: 80px;
+    font-weight: bold;
+    color: darkslateblue;
+}
+.dasub{
+    margin-left: 80px;
+}
+body{
+    background-color: rgb(243, 239, 239);
+}
+.left {
+    float: left;
+    padding: 0 10px 0 0;
+    margin:10px
+}
+p{
+    font-size: 16px;
+    word-spacing: 0.3em;
+}
+.leftpart{
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+.nav-link dropdown-toggle{
+    color: black;
+}
+.rightpart{
+    background-color: white;
+}
+.rightpart1{
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+.makewhite{
+    background-color: white;
+    margin: 40px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  rgb(65, 140, 187); 
+    color: white;
+    text-align: center;
+    border-top-style: solid; 
+    border-top-color: white;
+    border: black;
+    color: white; 
+    height: 40px; 
+    font-size: 14px; 
+    padding-top: 10px; 
+    }
